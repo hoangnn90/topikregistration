@@ -38,4 +38,4 @@ Register topik examination automatically
 
 
 ## Prepare image
-- Prepare image with path C:\image.jpg
+- Prepare image with path $PHOTO_FILE
