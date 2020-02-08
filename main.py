@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import WebDriverException
 
-APPLY_URL = 'http://www.topikhanoi.com/bbs/apply_reg.php?t_idx=5'
+APPLY_URL = 'http://www.topikhanoi.com/bbs/apply_reg.php?t_idx=14'
 APPLY_MANAGE_URL = 'http://www.topikhanoi.com/bbs/apply_manage.php'
 
 U_EMAIL0 = 'u_email0'
@@ -41,6 +41,8 @@ U_AGE = 'u_age'
 
 U_NATION = 'u_nation'
 NATION = 'VNM' # Viet Nam
+
+U_SID = 'u_sid'
 
 U_JOB = 'u_job'
 JOB = '2' # 공무원(Công chức)'
@@ -112,6 +114,9 @@ try:
     selectRadioButtonByID(ID_U_SEX_FEMALE)
 
     selectDropDown(U_NATION, NATION)
+
+    sendKeyByName(U_SID, data.SID)
+
     selectDropDown(U_JOB, JOB)
     selectDropDown(U_MOTIVE, MOTIVE)
     selectDropDown(U_PURPOSE, PURPOSE)
